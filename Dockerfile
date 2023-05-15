@@ -13,7 +13,7 @@ SHELL ["/bin/bash", "-c"]
 RUN wget https://sh.rustup.rs -O rustup-init
 RUN chmod +x rustup-init
 RUN ./rustup-init -y && source $HOME/.cargo/env
-RUN make clean calibration
+RUN make clean calibnet
 RUN make install
 
 
